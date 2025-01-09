@@ -1,0 +1,18 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+public class myFrame extends JFrame{public void paint ( Graphics g ){g.drawString("Click the close button", 10, 50 );
+}
+public static void main ( String[] args ){myFrame frm = new myFrame();
+WindowQuitter wquit = new WindowQuitter();
+frm.addWindowListener( wquit );
+frm.setSize( 150, 100 );
+frm.setVisible( true );
+}
+}class WindowQuitter extends WindowAdapter
+{
+public void windowClosing( WindowEvent e )
+{
+System.exit( 0 );
+}
+}
