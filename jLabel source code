@@ -1,0 +1,3 @@
+JLabel lab = new JLabel("Enter name: ");
+lab.setText("New Message");
+String s = lab.getText(); // rarely used
